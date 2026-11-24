@@ -58,9 +58,9 @@
 
 ```powershell
 go test ./...
-npm --prefix apps/folders run build:backend
-npm --prefix apps/folders run build:ui
-cargo check --manifest-path apps/folders/src-tauri/Cargo.toml
+npm run build:backend
+npm run build:ui
+cargo check --manifest-path src-tauri/Cargo.toml
 ```
 
-`go test ./...` 需要在 `apps/folders/backend-go` 目录执行。
+`go test ./...` 需要在 `backend-go` 目录执行。
