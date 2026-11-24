@@ -58,8 +58,8 @@
 
 ```powershell
 go test ./...
-pnpm --dir apps/folders build:backend
-pnpm --dir apps/folders build:ui
+npm --prefix apps/folders run build:backend
+npm --prefix apps/folders run build:ui
 cargo check --manifest-path apps/folders/src-tauri/Cargo.toml
 ```
 
